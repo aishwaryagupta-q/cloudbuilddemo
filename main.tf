@@ -1,7 +1,7 @@
 provider "google" {
   version = "3.5.0"
 
-  project = "streamy" //enter project name
+  project = "training-freshers" //enter project name
   region  = "us-central1" //enter correct location
   zone    = "us-central1-c" //enter zone
 }
@@ -10,7 +10,7 @@ provider "google" {
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
   machine_type = "f1-micro"
-  tags = ["Name", "Yash"]
+  tags = ["Yash Jaiswal"]
   boot_disk {
     initialize_params {
       image = "debian-cloud/debian-9"
