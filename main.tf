@@ -8,7 +8,7 @@ provider "google" {
 
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
+  name         = "yash-terraform-instance"
   machine_type = "f1-micro"
   tags = ["name","yash"]
   boot_disk {
