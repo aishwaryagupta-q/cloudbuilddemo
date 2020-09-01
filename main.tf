@@ -8,9 +8,9 @@ provider "google" {
 
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "yash-terraform-instance"
+  name         = "aishwarya-terraform-instance"
   machine_type = "f1-micro"
-  tags = ["name","yash"]
+  tags = ["name","aishwarya"]
   boot_disk {
     initialize_params {
       image = "debian-cloud/debian-9"
